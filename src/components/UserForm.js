@@ -22,7 +22,7 @@ const UserForm = () => {
     }
 
     try {
-      await axios.post(`${process.env.REACT_APP_API_URL}/users`, formData, {
+      await axios.post(`${process.env.REACT_APP_API_URL}/api/users`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       alert('Submission successful!');
